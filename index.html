@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Casamento Aline & Clement</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>" />
+</head>
+<style type="text/css">
+.sacramento-regular, h1, #polaroid figcaption {
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.raleway-regular, h2, p, label, a, address, time, input, textarea {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+	--mw: 1100px;
+	--vw:   min(var(--mw), 100vw);
+	--w1:  calc(var(--vw) / 100);
+	--w12: calc(var(--vw) / 12);
+	--w10: calc(var(--vw) / 10);
+	--w8:  calc(var(--vw) / 8);
+	--px:  calc(var(--vw) / 1100);
+	--p4:  calc(var(--px) * 4);
+	--p6:  calc(var(--px) * 6);
+	--p8:  calc(var(--px) * 8);
+	--p10: calc(var(--px) * 10);
+	--p20: calc(var(--px) * 20);
+	--p25: calc(var(--px) * 25);
+	--color-text: #1a3d53;
+	--color-title: #00253c;
+}
+
+* { box-sizing: border-box; margin: 0 }
+h1, h2, h3, h4 {
+	color: var(--color-title);
+}
+h1 {
+	font-size: calc(var(--w1) * 10);
+	text-align: center;
+	margin-bottom: 0;
+}
+
+header { text-align: center; }
+header img {
+  mask-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 648 489"><path d="M337 46c239 30 272 139 272 208 0 70-70 148-272 209-125 37-200-101-254-203C-11 79 112 17 337 46Z"/><path fill-opacity=".3" d="M337 21c267 61 310 155 310 233 0 77-73 192-310 232-126 21-226-116-288-226C-84 25 69-39 337 21Z"/></svg>');
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  max-width: 70%;
+  filter: hue-rotate(-12deg);
+}
+
+.flex-row {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+body {
+	background-color: #ffaa00;
+	background-image: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M41.2,-76.6C49.5,-66.6,49.6,-47.6,52.3,-33.4C55,-19.1,60.3,-9.6,63.5,1.8C66.6,13.2,67.7,26.4,64.1,39.3C60.6,52.1,52.5,64.5,41.1,67.5C29.6,70.5,14.8,64.1,-0.2,64.5C-15.3,64.9,-30.5,72.1,-43.1,69.7C-55.7,67.4,-65.5,55.4,-73.5,42.2C-81.5,29,-87.6,14.5,-89.1,-0.9C-90.5,-16.2,-87.4,-32.4,-77.3,-42C-67.2,-51.5,-50.2,-54.5,-36.1,-61.2C-22.1,-67.9,-11,-78.4,2.7,-83.1C16.5,-87.8,32.9,-86.7,41.2,-76.6Z" transform="translate(100 100) rotate(-93)"/></svg>');
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	background-position-y: calc(70 * var(--px));
+	background-position-x: center;
+	margin: 0 auto;
+	padding: 0;
+	padding-top: var(--w12);
+	max-width: var(--mw);
+}
+.subject {
+	color: var(--color-text);
+	font-size: max(calc(var(--w1) *2.2), 16px);
+}
+
+#rsvp {
+	background-image: url('data:image/svg+xml,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><path fill="%23c7dee9" d="M41.2,-76.6C49.5,-66.6,49.6,-47.6,52.3,-33.4C55,-19.1,60.3,-9.6,63.5,1.8C66.6,13.2,67.7,26.4,64.1,39.3C60.6,52.1,52.5,64.5,41.1,67.5C29.6,70.5,14.8,64.1,-0.2,64.5C-15.3,64.9,-30.5,72.1,-43.1,69.7C-55.7,67.4,-65.5,55.4,-73.5,42.2C-81.5,29,-87.6,14.5,-89.1,-0.9C-90.5,-16.2,-87.4,-32.4,-77.3,-42C-67.2,-51.5,-50.2,-54.5,-36.1,-61.2C-22.1,-67.9,-11,-78.4,2.7,-83.1C16.5,-87.8,32.9,-86.7,41.2,-76.6Z" transform="translate(100 100) rotate(55)"/></svg>');
+	background-repeat: no-repeat;
+	padding: var(--w8);
+	margin: calc(var(--w10) * -1);
+}
+
+#rsvp label > span {
+	width: 70px;
+	display: inline-flex;
+	text-align: left;
+	align-self: center;
+}
+#rsvp input, #rsvp textarea {
+	font-size: 16px;
+	padding: 4px 8px;
+	width: 220px;
+  border-radius: 6px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #9dc4db;
+}
+
+#rsvp input[type="submit"] {
+  border-radius: 8px;
+  border: none;
+  background: black;
+  color: white;
+  padding: 10px;
+	margin-left: 70px;
+}
+
+#rsvp label {
+	display: flex;
+	margin-top: 5px;
+	width: fit-content;
+}
+#rdv {
+	justify-content: center;
+	z-index: 10;
+	position: relative;
+	gap: calc(var(--px) * 40);
+	padding: calc(var(--px) * 40);
+}
+#rdv .left {
+	width: 220px;
+	text-align: right;
+}
+#rdv .right, #rdv .left {
+  flex: 1 1 0;
+  width: 0;
+}
+
+#bulma {
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+	right: 0;
+	pointer-events: none;
+	transform: translate(0, 500px) scaleX(-1);
+	transition: transform ease-out 100ms;
+}
+
+h2 {
+	white-space: nowrap;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+p, li {
+	line-height: 28px;
+	letter-spacing: 0.5px;
+	color: var(--color-text);
+}
+
+a {
+	color: black;
+}
+
+address {
+	font-style: italic;
+}
+.left time:after { content: ' —' }
+.right time:before { content: '— ' }
+
+
+/* Polaroid Frame on Images adapted from masmalven.com */
+figure, figcaption { display: block }
+#polaroid {
+	width: 100%;
+	padding: 80px var(--p10) 0;
+	margin: auto;
+	text-align: center;
+	margin-bottom: calc(var(--px) * 100);
+}
+#polaroid img { width: calc(var(--w1) * 20); height: auto }
+#polaroid figure {
+	position: relative;
+	width: auto;
+	margin: var(--p20) auto 0;
+	padding: var(--p6) var(--p8) var(--p10) var(--p8);
+	display: inline-block;
+	box-shadow: var(--p4) var(--p4) var(--p8) calc(var(--px) * -4) rgba(0, 0, 0, .75);
+	background-color: #eee6d8;
+	transform: rotate(-1deg);
+	backface-visibility: hidden;
+}
+#polaroid figure:nth-child(even) {
+	margin:var(--p20) calc(var(--px) * 18) var(--p20) var(--p25);
+	transform: rotate(2deg);
+	backface-visibility: hidden;
+	box-shadow: calc(var(--px) * -4) var(--p4) var(--p8) calc(var(--px) * -4) rgba(0, 0, 0, .75);
+}
+#polaroid figure:before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: calc(var(--px) * 5);
+	top: calc(-1 * var(--p10));
+	width: calc(var(--px) * 75);
+	height: var(--p25);
+	z-index: 1;
+	background-color: rgba(222,220,198,0.7);
+	transform: rotate(-12deg);
+}
+#polaroid figure:nth-child(even):before {
+	left:unset;
+	right:var(--p10);
+	top:calc(-1 * var(--p10));
+	width: calc(var(--px) * 55);
+	height: var(--p25);
+	z-index: 1;
+	transform: rotate(12deg);
+}
+#polaroid figcaption {
+	text-align: center;
+	font-size: calc(var(--px) * 32);
+	color: #454f40;
+	margin-top: var(--p10);
+}
+
+@media (max-width: 680px) {
+	#bulma { display: none }
+	.left time:after { content: '' }
+	time:before { content: '— ' }
+	.flex-row {
+		flex-direction: column;
+		padding: 0 var(--p20);
+	}
+	#rsvp {
+		margin: 0 auto;
+	}
+	#rdv .left, #rdv .right {
+		text-align: left;
+  	width: 100%;
+	}
+	#polaroid img { width: calc(var(--w1) * 80) }
+	#polaroid figcaption {
+		font-size: calc(var(--px) * 80);
+	}
+}
+</style>
+<body>
+
+<header>
+	<img src="./main.jpg"/>
+</header>
+
+<h1>
+	<span class="aline">Aline</span>
+	<span class="ampersand">&</span>
+	<span class="clement">Clement</span>
+</h1>
+<div class="subject" style="text-align: center;">
+	<p>We warmly invite you to our wedding</p>
+	<p>Saturday 14/09/2024 in Tours, France</p>
+</div>
+<div id="rdv" class="flex-row">
+	<div class="column left">
+		<h2>Ceremony civil</h2>
+		<p>
+			<address>1 Rue des Minimes, Tours</address><time>11h30</time>
+		</p>
+	</div>
+	<div class="column right">
+		<h2>Petit Comité</h2>
+		<p>
+			<address>8 allée de la fauvette, Tours</address><time>12h30</time>
+		</p>
+		<p style="padding-top: 12px">
+			After the civil ceremony, we'll get together to receive congratulations
+			and make a toast over a small buffet.
+		</p>
+	</div>
+</div>
+<div class="flex-row">
+	<div class="column">
+		<div id="rsvp">
+			<h2>RSVP</h2>
+			<form action="https://api.sheetmonkey.io/form/3KPhe1oHP7yqkjowiSq51G" method="post">
+				<label><span>Name:</span><input type="text" name="Name" required /></label>
+				<label><span>Email:</span><input type="email" name="Email" /></label>
+				<label><span>Phone:</span><input type="tel" name="Phone Number" /></label>
+				<label><span>Notes:</span><textarea name="Notes"></textarea></label>
+				<input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+				<p>Please commit your presence before 30 of june.</p>
+				<input type="submit" value="Sign Up" onmouseenter="bulma.style.transform = 'translate(0, 0) scaleX(-1)'" onmouseleave="bulma.style.transform = ''" />
+			</form>
+		</div>
+	</div>
+	<div class="column">
+		<h2>Where to Stay</h2>
+		<ul>
+			<li><a href="https://castel-fleuri-tours.com/fr/content/68/64/accueil">Castel Fleuri</a></li>
+			<li><a href="https://all.accor.com/hotel/A312/index.en.shtml">Novotel Centre Gare</a></li>
+			<li><a href="https://gogaille.fr/fr/destinations/tours/corneille/chambre-double">Loges Gogailles</a></li>
+		</ul>
+		<h2>What to do in Tours</h2>
+		<p>
+			About 1h in train from Paris, Tours is a charming town on a human scale,
+			and the perfect destination for a weekend combining culture and nature,
+			thanks to its rich heritage and numerous green spaces.
+			Tours is also the ideal starting point for discovering the famous chateaux of the Loire Valley.
+		</p>
+		<h2>Wedding List</h2>
+		<p>
+			As we already live together in another country, we haven't made a wedding list,
+			but if you'd like to give us something, you can send it to the following link:
+			<a href="https://www.leetchi.com/en/c/casamento-aline-clement-5065893">
+				leetchi - casamento-aline-clement
+			</a>
+		</p>
+	</div>
+</div>
+<div id="polaroid">
+	<figure>
+		<img src="./top2.jpg" alt="Selfie with Leo" title="Jan. 24"/>
+		<figcaption>Jan. 24</figcaption>
+	</figure>
+	<figure>
+		<img src="./top1.jpg" alt="Leo & Bulma" title="Winter in France"/>
+		<figcaption>Winter in France</figcaption>
+	</figure>
+	<figure>
+		<img src="./top3.jpg" alt="Another Selfie with Leo" title="Just in Tavira"/>
+		<figcaption>Just in Tavira</figcaption>
+	</figure>
+</div>
+<img id="bulma" src="./bulma.png">
+</body>
+</html>
